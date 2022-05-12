@@ -1,0 +1,17 @@
+create table TeamDetails(SL_NO INT ,TeamName VARCHAR(20),
+Captain VARCHAR(20),Team_Owner VARCHAR(20),Home_Ground VARCHAR(20),primary key(SL_NO))
+
+create table Fixtures(Match_Number INT  , HomeTeam VARCHAR (20),Away_Team VARCHAR(20)
+ ,Venu VARCHAR(20),Team_Won VARCHAR(20),Team_Lost VARCHAR(20),primary key(Match_Number))
+ 
+
+create table Points(Team_Name VARCHAR (20),No_of_Wins INT,
+No_of_Losses INT,Point INT,primary key (Team_Name))
+
+Insert into TeamDetails values(8,'RR','Ajinkya Rahane','Emerging','Jaipur')
+
+Select * from TeamDetail
+
+SELECT * FROM FIXTURES
+
+SELECT * FROM FIXTURES WHERE HOMETEAM = 'RCB' AND VENU='BANGALORE'
